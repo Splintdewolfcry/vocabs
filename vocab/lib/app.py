@@ -17,7 +17,7 @@ from .clilib import client
 class App:
     def __init__(self):
         self.root_url = "https://www.oxfordlearnersdictionaries.com/"
-        self.query_url = "https://www.oxfordlearnersdictionaries.com/definition/english/{}"
+        self.query_url = "https://www.oxfordlearnersdictionaries.com/definition/{}"
         self.sess = requests.Session()
         self.myDict = {}
         if not os.path.exists(config.DICT_DIR):
